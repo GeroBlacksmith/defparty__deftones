@@ -62,7 +62,7 @@ export default function Home() {
 
       {/* "El Tema del Día" Section */}
       <section id="song-of-the-day" className="py-20 px-6 bg-gray-800">
-        <div className="max-w-4xl mx-auto text-center">
+        <div className="w-3/4 md:max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-semibold mb-8">El Tema del Día</h2>
           <p className="text-lg mb-6">
             El tema que nos machacará la cabeza por hoy
