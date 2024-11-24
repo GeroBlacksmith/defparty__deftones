@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -42,12 +43,14 @@ export default function Home() {
             <li className="mb-4">
               <div className="bg-gray-700 p-6 rounded-lg shadow">
                 <div className="w-full flex flex-col items-center justify-center">
+                  <Link href="https://www.instagram.com/defparty__deftones/">
                   <Image
                     width={300}
                     height={600}
                     src="/images/evento-1.jpg"
                     alt="Flyer del evento"
-                  />
+                    />
+                    </Link>
                 </div>
                 <h3 className="text-2xl font-semibold">
                   En vivo en Spazio Morrigan, Junto los amigos de Sutura
@@ -90,50 +93,17 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Contact Section */}
-      <section id="contact" className="py-20 px-6">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-semibold mb-8">Contáctanos</h2>
-          <p className="text-lg mb-6">
-            ¡Conéctate con nosotros a través de nuestras redes sociales!
-          </p>
-          <div className="flex justify-center space-x-6">
-            <a
-              href="https://instagram.com/defparty__deftones" // Cambia este enlace por el de tu Instagram
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-400 hover:text-blue-600 text-lg"
-            >
-              Instagram
-            </a>
-            <a
-              href="https://wa.me/1234567890" // Cambia este número por el de tu grupo de WhatsApp
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-green-400 hover:text-green-600 text-lg"
-            >
-              WhatsApp
-            </a>
-          </div>
-        </div>
-      </section>
+     
       {/* Footer */}
       <footer className="bg-gray-900 py-6 text-center">
         <p>© 2024 Defparty. Todos los derechos reservados.</p>
         <div className="flex justify-center space-x-4 mt-4">
           <a
-            href="https://instagram.com/defparty_deftones"
+            href="https://instagram.com/defparty__deftones"
             target="_blank"
             className="hover:text-blue-500"
           >
             Instagram
-          </a>
-          <a
-            href="https://facebook.com/defparty"
-            target="_blank"
-            className="hover:text-blue-500"
-          >
-            Facebook
           </a>
         </div>
       </footer>
