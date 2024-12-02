@@ -3,28 +3,49 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="bg-gray-900 text-white min-h-screen">
+    <div className="bg-gray-900 bg-blend-color-burn	 text-white min-h-screen">
       {/* Hero Section */}
       <header
-        className="relative bg-cover bg-center h-screen flex flex-col justify-start items-center text-center"
+        className="relative bg-cover bg-center 	 h-screen flex flex-col justify-start items-center text-center"
         style={{
-          backgroundImage: 'url("images/deftones-bg.jpg")',
+          backgroundImage: 'url("images/defparty_crew.webp")',
         }}
       >
-        <div className="w-full h-fit p-8  flex flex-col justify-center items-center">
-          <h1 className="text-6xl font-bold mb-4 drop-shadow-lg">Defparty</h1>
-          <p className="text-xl mb-6">Tributo a Deftones</p>
-          <a
+     
+        <div className="absolute top-0 left-0 right-0 bottom-0 bg-blend-color-burn bg-black opacity-80">
+        <div className="w-full h-full p-8 bg-blend-color-burn flex flex-col justify-center items-center">
+          <h1 className="text-9xl font-bold mb-4 drop-shadow-lg">Defparty</h1>
+          <div className="bg-gray-700 p-6 rounded-lg shadow">
+                <div className="w-full flex flex-col items-center justify-center">
+                  <Link href="https://www.instagram.com/defparty__deftones/">
+                  <Image
+                    width={300}
+                    height={600}
+                    src="/images/evento-1.jpg"
+                    alt="Flyer del evento"
+                    />
+                    </Link>
+                </div>
+                <h3 className="text-2xl font-semibold">
+                  En vivo en Spazio Morrigan, Junto los amigos de Sutura
+                </h3>
+                <p>21 de diciembre, 2024</p>
+                <p>Entrada: $4000</p>
+                <p>Alias: defparty.nqn</p>
+              </div>
+        {/*   <p className="text-xl mb-6">Tributo a Deftones</p> */}
+         {/*  <a
             href="#about"
             className="px-6 py-3 bg-blue-600 hover:bg-blue-800 rounded-full transition"
           >
             Saber más
-          </a>
+          </a> */}
+        </div>
         </div>
       </header>
 
       {/* About Section */}
-      <section id="about" className="py-20 px-6">
+     {/*  <section id="about" className="py-20 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-semibold mb-4">Sobre nosotros</h2>
           <p className="text-lg">
@@ -33,10 +54,10 @@ export default function Home() {
             los riffs melódicos hasta las explosiones de energía.
           </p>
         </div>
-      </section>
+      </section> */}
 
       {/* Upcoming Events Section */}
-      <section className="bg-gray-800 py-20 px-6">
+    {/*   <section className="bg-gray-800 py-20 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-semibold mb-8">Próximos eventos</h2>
           <ul>
@@ -61,10 +82,10 @@ export default function Home() {
             </li>
           </ul>
         </div>
-      </section>
+      </section> */}
 
       {/* "El Tema del Día" Section */}
-      <section id="song-of-the-day" className="py-20 px-6 bg-gray-800">
+      {/* <section id="song-of-the-day" className="py-20 px-6 bg-gray-800">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-semibold mb-8">El Tema del Día</h2>
           <p className="text-lg mb-6">
@@ -91,7 +112,7 @@ export default function Home() {
             className="mx-auto block md:hidden"
           ></iframe>
         </div>
-      </section>
+      </section> */}
 
      
       {/* Footer */}
