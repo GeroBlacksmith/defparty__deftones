@@ -27,7 +27,7 @@ export default function Home() {
                     </Link>
                 </div>
                 <h3 className="text-2xl font-semibold">
-                  En vivo en Spazio Morrigan, Junto los amigos de Sutura
+                  En vivo en Spazio Morrigan, Junto a los amigos de Sutura
                 </h3>
                 <p>21 de diciembre, 2024</p>
                 <p>Entrada: $4000</p>
